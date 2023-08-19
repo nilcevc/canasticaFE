@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/d16758d3-2415-4cb7-bdbb-aba692c16597/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/my-app-canastica",
-    "appService.deploySubpath": "."
-}
