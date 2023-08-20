@@ -19,6 +19,8 @@ export default function Home() {
 
   return (
     <main>
+      <h1 className="text-5xl font-light m-8 text-center text-gray-600">Productos</h1>
+
       <div className="flex flex-row">
         <Button>
           <Link href={`supermercados`}>
@@ -31,6 +33,7 @@ export default function Home() {
           </Link>
         </Button>
       </div>
+
       <div className="flex flex-wrap items-center justify-center">
 
         {

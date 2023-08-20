@@ -18,6 +18,7 @@ export default function Supermercados(){
 
     return (
         <main>
+            <h1 className="text-5xl font-light m-8 text-center text-gray-600">Supermercados</h1>
             <Button>
                 <Link href={`supermercados/crear`}>
                     Crear supermercado
