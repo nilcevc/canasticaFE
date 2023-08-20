@@ -25,11 +25,11 @@ export default function Home() {
             Ver supermercados
           </Link>
         </Button>
-        {/* <Button">
-          <Link>
+        <Button>
+          <Link href={'producto/crear'}>
             Crear producto
           </Link>
-        </Button> */}
+        </Button>
       </div>
       <div className="flex flex-wrap items-center justify-center">
 

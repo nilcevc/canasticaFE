@@ -91,9 +91,13 @@ export default function InfoProducto({params}){
                 <div className='m-10 text-center text-gray-500'>
                     <p>Comparación de precios entre supermercados</p>
                 </div>
-                <div>
-                    <select value={selected} onChange={handleChange}>
-                        <option value=''>Escoja</option>
+                <div className='ml-10 text-lg'>
+                    <p>Agregar otro precio</p>
+                </div>
+                <div className='m-3 text-center mb-2 text-sm font-medium text-gray-900 mr-4'>
+                    <label className=' mb-2 text-sm font-medium text-gray-900 mr-4'>Supermercado</label>
+                    <select className='mr-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 w-1/4 p-2.5' value={selected} onChange={handleChange}>
+                        <option value=''>Seleccione el supermercado</option>
                         {
                             supermercados?.map((supermercados, index)=>(
                                 <option key={index} value={supermercados.id}>
@@ -102,7 +106,7 @@ export default function InfoProducto({params}){
                             ))
                         }
                     </select>
-                    <label>Precio</label>
+                    <label className='mb-2 mr-1 text-sm font-medium text-gray-900'>Precio</label>
                     <TextInput value={precio} onChange={(e)=>setPrecio(e.target.value)}/>
                     <Button disabled={selected === ''}  onClick={agregarInfo}>Agregar</Button>
                 </div>
