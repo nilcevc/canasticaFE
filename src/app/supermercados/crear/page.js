@@ -39,7 +39,7 @@ export default function CrearSupermercado(){
                 <TextInput onChange={(e)=>setNombre(e.target.value)}/>
             </div>
             <div className='m-2'>
-                <label>Ubicacion</label>
+                <label>Ubicación:</label>
                 <TextInput onChange={(e)=>setUbicacion(e.target.value)}/>
             </div> 
            <Button onClick={crearSuper}>

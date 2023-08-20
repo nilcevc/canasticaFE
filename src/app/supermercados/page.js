@@ -27,7 +27,6 @@ export default function Supermercados(){
                 {
                     supermercados?.map((data, index)=>{
                         return <Card key={index} name={data.nombre} desc={data.ubicacion} codProd={data.id}>
-                            <Button>x</Button>
                         </Card>
                     }) 
                 }

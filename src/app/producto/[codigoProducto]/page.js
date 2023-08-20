@@ -40,8 +40,8 @@ export default function InfoProducto({params}){
             },
             body:JSON.stringify(data)
         })
-        .then((data)=>data.json())
-        .then((realData)=>{
+        .then()
+        .then(()=>{
             getProduct()
         })
 
