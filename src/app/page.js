@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Card from './components/Card'
 import { useState, useEffect } from 'react';
 import { data } from 'autoprefixer';
+import Link from 'next/link';
+import Button from './components/Button';
 
 export default function Home() {
    const [products, setProducts] = useState([]);
@@ -17,13 +19,23 @@ export default function Home() {
 
   return (
     <main>
-      {/* <div className="flex items-center justify-center h-14 p-10  bg-gradient-to-r from-pink-400 to-pink-600 shadow-xl">
-        <h1 className="font-conforta font-semibold text-4xl">Canas<a className="text-white">Tica</a></h1>
-      </div> */}
-      <div className="flex flex-wrap items-center justify-center m-10">
+      <div className="flex flex-row">
+        <Button>
+          <Link href={`supermercados`}>
+            Ver supermercados
+          </Link>
+        </Button>
+        {/* <Button">
+          <Link>
+            Crear producto
+          </Link>
+        </Button> */}
+      </div>
+      <div className="flex flex-wrap items-center justify-center">
+
         {
           products?.map((data, index)=>{
-            return <Card key={index} name={data.nombre} desc={data.descripcion} codProd={data.codigo}/>
+            return <Link key={index} href={`producto/${data?.codigo}`}><Card name={data.nombre} desc={data.descripcion} codProd={data.codigo}/></Link>
           })
         }
       </div>
